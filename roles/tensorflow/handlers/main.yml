@@ -1,0 +1,3 @@
+- name: check_tensorflow_service
+  debug:
+    var: check_tensorflow_service.stdout
