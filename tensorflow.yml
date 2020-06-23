@@ -1,6 +1,6 @@
 # 核心任务
 
-- name: tensorflow
+- name: TensorFlow
   hosts: all
   become: yes
   become_method: sudo
@@ -11,6 +11,6 @@
   roles:
     - { role: role_common, tags: "role_common"}  
     - { role: role_cloud, tags: "role_cloud"}  
-    - { role: tensorflow, tags: "tensorflow"}
+    - { role: role_python, tags: "role_python"}
     - { role: role_preend, tags: "role_preend"}  
     - { role: role_end, tags: "role_end"}  

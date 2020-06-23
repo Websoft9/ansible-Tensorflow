@@ -1,2 +1,6 @@
+region: "0"
+preend_certbot: True
+
+
 python_applications: 
   - tensorflow
