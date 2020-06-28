@@ -1,6 +1,8 @@
 region: "0"
 preend_certbot: True
 
+nginx_reverse_proxy_port: "6006"
+
 
 python_applications: 
   - tensorflow
