@@ -1,7 +1,9 @@
 region: "0"
 
 nginx_reverse_proxy_port: "6006"
-
+nginx_certbot: True
+nginx_appname: "tensorflow"
+nginx_vhost_mode: "reverse"
 
 python_applications: 
   - tensorflow
