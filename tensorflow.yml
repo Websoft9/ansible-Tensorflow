@@ -7,10 +7,6 @@
 
   vars_files:
     - vars/main.yml
-  
-  pre_tasks:
-    - set_fact:
-        python_applications: "tensorflow"
 
   roles:
     - { role: role_common, tags: "role_common"}  
