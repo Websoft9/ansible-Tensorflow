@@ -1,7 +1,3 @@
----
-home: false
----
-
 # 关于
 
 本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 TensorFlow 的安装部署与基本运维技术，包括：TensorFlow部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。

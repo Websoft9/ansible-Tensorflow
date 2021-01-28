@@ -10,7 +10,7 @@ TensorFlow 完整的更新升级包括：系统级更新（操作系统和运行
 
 ## 系统级更新
 
-运行一条更新命令，即可完成系统级（包含TensorFlow小版本更新）更新：
+运行一条更新命令，即可完成系统级更新：
 
 ``` shell
 #For Ubuntu&Debian
@@ -26,5 +26,6 @@ yum update -y --skip-broken
 
 通过pip命令升级
 ```
+source /data/apps/tensorflow/bin/activate
 pip install -U TensorFlow
 ```
