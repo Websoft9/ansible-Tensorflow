@@ -24,4 +24,7 @@ yum update -y --skip-broken
 
 ## TensorFlow升级
 
-详情参考官方升级文档：[Upgrading TensorFlow](https://www.tensorflow.com/upgrade.html)
+通过pip命令升级
+```
+pip install -U TensorFlow
+```

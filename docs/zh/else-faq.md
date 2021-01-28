@@ -4,6 +4,10 @@
 
 密码存放在服务器相关文件中：`/credentials/password.txt`
 
+#### TensorFlow的升级、配置需要在隔离环境下进行吗？
+
+是，执行`source /data/apps/tensorflow/bin/activate`即可进入隔离环境,退出为`deactivate`
+
 #### 是否有可视化的管理工具？
 
 有，内置phpMyAdmin，访问地址：*http://服务器公网IP/*
