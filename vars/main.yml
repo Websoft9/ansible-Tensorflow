@@ -7,3 +7,13 @@ nginx_vhost_mode: "reverse"
 
 python_applications: 
   - tensorflow
+  
+nginx_htpasswd: True
+
+init_application:
+  nginx:
+    username: "admin"
+    password: "admin"
+    commands: 
+      - htpasswd -b /etc/nginx/.htpasswd admin $new_password
+      - systemctl restart nginx
