@@ -1,35 +1,21 @@
 # FAQ
 
-#### 如何以调试模式启动TensorFlow服务？
-
-```
-systemctl stop tensorflow-server
-tensorflow-server console
-```
-
-#### 是否可以通过命令行修改TensorFlow后台密码？
-
-可以，`tensorflowctl change_password  admin newpassword`
-
-#### 如果没有域名是否可以部署 TensorFlow？
-
-#### 数据库 root 用户对应的密码是多少？
+#### TensorFlow 管理员用户对应的密码是多少？
 
 密码存放在服务器相关文件中：`/credentials/password.txt`
 
-可以，访问`http://服务器公网IP` 即可
+#### 是否有可视化的管理工具？
 
-#### 是否有可视化的数据库管理工具？
-
-有，内置phpMyAdmin，访问地址：*http://服务器公网IP/phpmyadmin*
-
-#### 如何禁止外界访问phpMyAdmin？
-
-连接服务器，编辑 [phpMyAdmin 配置文件](/zh/stack-components.md#phpmyadmin)，将其中的 `Require all granted` 更改为 `Require ip 192.160.1.0`，然后重启 Apache 服务
+有，内置phpMyAdmin，访问地址：*http://服务器公网IP/*
 
 #### 是否可以修改TensorFlow的源码路径？
 
 不可以
+
+#### TensorFlow 实现GPU支持需要哪些条件？
+
+TensorFlow GPU 支持需要 NVIDIA® GPU显卡以及驱动程序和工具。
+详细请参照[TensorFlow GPU 支持软硬件要求](https://www.tensorflow.org/install/gpu)
 
 #### 如何修改上传的文件权限?
 
