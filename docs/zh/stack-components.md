@@ -25,7 +25,7 @@ Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
-| HTTP | 80 | 通过 HTTP 访问 TensorBoard | 可选 |
+| HTTP | 6006 | 通过 HTTP 访问 TensorBoard | 可选 |
 
 
 ## 版本号
