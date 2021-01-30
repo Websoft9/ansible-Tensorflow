@@ -6,11 +6,11 @@
 
 #### 是否有可视化的管理工具？
 
-有，内置phpMyAdmin，访问地址：*http://服务器公网IP/*
+有，内置TensorBoard，访问地址：*http://服务器公网IP:6006/*
 
 #### 是否可以修改TensorFlow的源码路径？
 
-不可以
+不可以，TensorFlow使用pip安装，服务启动文件设定路径为目前源码路径，修改后服务可能无法启动
 
 #### TensorFlow 实现GPU支持需要哪些条件？
 
@@ -21,7 +21,7 @@ TensorFlow GPU 支持需要 NVIDIA® GPU显卡以及驱动程序和工具。
 
 ```shell
 # 拥有者
-chown -R apache.apache /data/wwwroot/
+chown -R nginx.nginx /data/wwwroot/
 # 读写执行权限
 find /data/wwwroot/ -type d -exec chmod 750 {} \;
 find /data/wwwroot/ -type f -exec chmod 640 {} \;
