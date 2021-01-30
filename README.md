@@ -1,6 +1,6 @@
-# Tensorflow 自动化安装与部署
+# TensorFlow 自动化安装与部署
 
-本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Tensorflow](https://www.tensorflow.org/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 tensorflow，让原本复杂的安装过程变得没有任何技术门槛。  
+本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Tensorflow](https://www.tensorflow.org/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 TensorFlow，让原本复杂的安装过程变得没有任何技术门槛。  
 
 本项目是开源项目，采用 LGPL3.0 开源协议。
 
@@ -15,13 +15,15 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
 
+更多配置要求参照[官方文档](https://www.tensorflow.org/install/pip)
+
 ## 组件
 
-包含的核心组件为：Tensorflow
+包含的核心组件为：TensorFlow
 
 更多请见：[参数表](/docs/zh/stack-components.md)
 
-## 本项目安装的是 tensorflow 最新版吗？
+## 本项目安装的是 TensorFlow 最新版吗？
 
 本项目通过 pip 进行安装，默认安装即为最新版。我们会定期检查并测试官方版本的可用性，尽可能保证用户可以顺利安装最新版。 
 

@@ -24,3 +24,5 @@ free -lh
 systemctl status tensorflow
 journalctl -u tensorflow
 ```
+
+更多请参照[TensorFlow 故障处理](https://www.tensorflow.org/install/errors)
