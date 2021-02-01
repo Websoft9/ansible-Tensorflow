@@ -4,21 +4,13 @@
 
 The password is stored in the server related file `/credentials/password.txt`.
 
-#### If there is no domain name, can I deploy TensorFlow?
-
-Yes, visit TensorFlow by *http://Internet IP:8161*
-
-#### What is the password for the database root user?
-
-The password is stored in the server related file: `/credentials/password.txt`
-
 #### Is there a web-base GUI database management tools?
 
-Yes, phpMyAdmin is on it, visit by *http://Internet IP/phpmyadmin*
+Yes, TensorBoard is on it, visit by *http://Internet IP:6006*
 
 #### Is it possible to modify the source path of TensorFlow?
 
-No
+No, Tensorflow is installed with PIP, and the service startup file is set to the current source code path. After modification, the service could not start
 
 #### How to change the permissions of filesytem?
 

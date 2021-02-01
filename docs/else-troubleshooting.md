@@ -26,8 +26,4 @@ df -lh
 free -lh
 ```
 
-#### Error in Chrome when modify password?
-
-This error is not attribute to TensorFlow server, once you have upgraded you local Chrome, it solved
-
-![chrome error of TensorFlow](https://libs.websoft9.com/Websoft9/DocsPicture/zh/tensorflow/tensorflow-chromeerror-websoft9.png)
+> Please refer to [official document](https://www.tensorflow.org/install/errors) for more trouble shooting
