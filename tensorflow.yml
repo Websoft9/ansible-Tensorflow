@@ -12,6 +12,7 @@
     - { role: role_common, tags: "role_common"}  
     - { role: role_cloud, tags: "role_cloud"}  
     - { role: role_nginx, tags: "role_nginx"}
-    - { role: role_python, tags: "role_python"} 
+    - { role: role_python, tags: "role_python"}
+    - { role: role_init, tags: "role_init"} 
     - { role: role_preend, tags: "role_preend"}  
     - { role: role_end, tags: "role_end"}  
