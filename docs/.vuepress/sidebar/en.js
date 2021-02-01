@@ -15,7 +15,6 @@ module.exports = [
         title: 'Best Practices',
         collapsable: false,
         children: [
-          '/solution-https',
           '/solution-backup',
           '/solution-upgrade',
           '/solution-more',
