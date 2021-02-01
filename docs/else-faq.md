@@ -1,15 +1,8 @@
 # FAQ
 
-#### How can I enable the debug mode of TensorFlow service?
+#### What is the password for the admin user?
 
-```
-systemctl stop tensorflow-server
-tensorflow-server console
-```
-
-#### Can I reset password of TensorFlow by command?
-
-Yes, e.g `tensorflowctl change_password  admin newpassword`
+The password is stored in the server related file `/credentials/password.txt`.
 
 #### If there is no domain name, can I deploy TensorFlow?
 
@@ -32,7 +25,7 @@ No
 Change owner(group) or permissions like below:
 
 ```shell
-chown -R apache.apache /data/wwwroot
+chown -R nginx.nginx /data/wwwroot
 find /data/wwwroot -type d -exec chmod 750 {} \;
 find /data/wwwroot -type f -exec chmod 640 {} \;
 ```
