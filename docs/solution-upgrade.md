@@ -26,4 +26,8 @@ yum update -y --skip-broken
 
 ## TensorFlow Upgrade
 
-Refer to the official docs: [Upgrading TensorFlow](https://www.tensorflow.com/upgrade.html)
+Upgrade by PIP command
+```
+source /data/apps/tensorflow/bin/activate
+pip install -U TensorFlow
+```
