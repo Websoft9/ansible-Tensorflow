@@ -9,5 +9,4 @@ sudo systemctl start tensorflow
 sudo systemctl stop tensorflow
 sudo systemctl restart tensorflow
 sudo systemctl status tensorflow
-
 ```
