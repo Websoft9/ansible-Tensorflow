@@ -2,27 +2,57 @@
 
 下面每一个方案，都经过实践证明行之有效，希望能够对你有帮助
 
-## 配置
+### 简单示例
 
-参考官方方案：https://www.tensorflow.com/configure.html
+为了方便理解TensorFlow，我们已经做了一个最简单的示例，步骤如下：
 
-## 域名绑定
+1. 运行TensorFlow应用例
+```
+cd /data/apps/tensorflow
+source /data/apps/tensorflow/bin/activate
+python tensorflow_test.py
 
-当服务器上只有一个网站时，不做域名绑定也可以访问网站。但从安全和维护考量，**域名绑定**不可省却。
+(tensorflow) root@iZj6cgvr9r6lehhsl9up9fZ:/data/apps/tensorflow# python tensorflow_test.py
+2021-02-01 15:50:07.644082: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-02-01 15:50:07.644123: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+11493376/11490434 [==============================] - 0s 0us/step
+2021-02-01 15:50:10.347277: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-01 15:50:10.351127: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-02-01 15:50:10.351159: W tensorflow/stream_executor/cuda/cuda_driver.cc:326] failed call to cuInit: UNKNOWN ERROR (303)
+2021-02-01 15:50:10.351193: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (iZj6cgvr9r6lehhsl9up9fZ): /proc/driver/nvidia/version does not exist
+2021-02-01 15:50:10.351518: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-02-01 15:50:10.351727: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-01 15:50:10.445424: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2021-02-01 15:50:10.445465: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2021-02-01 15:50:10.446864: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2021-02-01 15:50:10.807437: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-02-01 15:50:10.824709: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2500010000 Hz
+Epoch 1/5
+   1/1875 [..............................] - ETA: 14:03 - loss: 2.2938 - accuracy: 0.18752021-02-01 15:50:11.339254: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2021-02-01 15:50:11.339304: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2021-02-01 15:50:11.345715: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2021-02-01 15:50:11.354333: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2021-02-01 15:50:11.366301: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11
+2021-02-01 15:50:11.367143: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11/iZj6cgvr9r6lehhsl9up9fZ.trace.json.gz
+2021-02-01 15:50:11.379630: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11
+2021-02-01 15:50:11.379732: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11/iZj6cgvr9r6lehhsl9up9fZ.memory_profile.json.gz
+2021-02-01 15:50:11.379912: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11Dumped tool data for xplane.pb to /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11/iZj6cgvr9r6lehhsl9up9fZ.xplane.pb
+Dumped tool data for overview_page.pb to /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11/iZj6cgvr9r6lehhsl9up9fZ.overview_page.pb
+Dumped tool data for input_pipeline.pb to /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11/iZj6cgvr9r6lehhsl9up9fZ.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11/iZj6cgvr9r6lehhsl9up9fZ.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /data/logs/tensorflow20210201-155010/train/plugins/profile/2021_02_01_15_50_11/iZj6cgvr9r6lehhsl9up9fZ.kernel_stats.pb
+1875/1875 [==============================] - 6s 3ms/step - loss: 0.3591 - accuracy: 0.8947 - val_loss: 0.1066 - val_accuracy: 0.9691
+Epoch 2/5
+1875/1875 [==============================] - 5s 3ms/step - loss: 0.0993 - accuracy: 0.9700 - val_loss: 0.0773 - val_accuracy: 0.9761
+Epoch 3/5
+1875/1875 [==============================] - 5s 3ms/step - loss: 0.0663 - accuracy: 0.9799 - val_loss: 0.0698 - val_accuracy: 0.9776
+Epoch 4/5
+1875/1875 [==============================] - 5s 3ms/step - loss: 0.0498 - accuracy: 0.9838 - val_loss: 0.0730 - val_accuracy: 0.9775
+Epoch 5/5
+1875/1875 [==============================] - 5s 3ms/step - loss: 0.0398 - accuracy: 0.9869 - val_loss: 0.0646 - val_accuracy: 0.9801
+```
+2. 返回TensorBoard 页面，图形发生变化：
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/tensorflow/tensorflow-sampletest-websoft9.png)
 
-以示例网站为例，域名绑定操作步骤如下：
-
-1. 确保域名解析已经生效  
-2. 使用 SFTP 工具登录云服务器
-2. 修改 [Nginx虚拟机主机配置文件](/zh/stack-components.md#nginx)，将其中的 **server_name** 项的值修改为你的域名
-   ```text
-   server
-   {
-   listen 80;
-   server_name www.example.com;  # 此处修改为你的域名
-   index index.html index.htm index.php;
-   root  /data/wwwroot/www.example.com;
-   ...
-   }
-   ```
-3. 保存配置文件，重启 [Nginx 服务](/zh/admin-services.md#nginx)

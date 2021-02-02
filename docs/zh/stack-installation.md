@@ -77,7 +77,7 @@ Epoch 5/5
 1875/1875 [==============================] - 5s 3ms/step - loss: 0.0398 - accuracy: 0.9869 - val_loss: 0.0646 - val_accuracy: 0.9801
 ```
 2. 返回TensorBoard 页面，图形发生变化：
- ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/rocketmq/rocketmq-sampletest-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/tensorflow/tensorflow-sampletest-websoft9.png)
 
 ## 常见问题
 
