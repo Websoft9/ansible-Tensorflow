@@ -16,6 +16,7 @@ module.exports = [
     title: '实践指南',
     collapsable: false,
     children: [
+      '/zh/solution-cli',
       '/zh/solution-backup',
       '/zh/solution-upgrade',
       '/zh/solution-more',
