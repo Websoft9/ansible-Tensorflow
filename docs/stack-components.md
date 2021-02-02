@@ -6,8 +6,9 @@ The TensorFlow deployment package contains a sequence software (referred to as "
 
 ### TensorFlow
 
-TensorFlow installation directory:  */data/tensorflow*  
+TensorFlow installation directory:  */data/apps/tensorflow*  
 TensorFlow logs directory:  */data/logs/tensorflow*  
+TensorFlow configuration file:  */data/apps/tensorflow/conf*  
 
 ### Nginx
 
@@ -16,12 +17,6 @@ Nginx main configuration file: */etc/nginx/nginx.conf*
 Nginx logs file: */var/log/nginx*  
 Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
 
-### MYSQL
-
-MySQL installation directory: */usr/local/mysql*  
-MySQL data directory: */data/mysql*  
-MySQL configuration file: */etc/my.cnf*    
-MySQL Web Management URL: *http://Internet IP/9panel*, get credential from [Username and Password](/stack-accounts.md)
 
 ## Ports
 
@@ -31,9 +26,7 @@ You can run the cmd `netstat -tunlp` to list all used ports, and we list the fol
 
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
-| HTTP | 8161 | HTTP requests for TensorFlow Console| Required |
-| HTTPS | 5672 | epmd | Optional |
-| TCP | 55672 | Erlang distribution | Optional |
+| HTTP | 6006 | HTTP requests for TensorBoard| Required |
 
 
 ## Version
@@ -50,16 +43,13 @@ lsb_release -a
 # Nginx  Version
 nginx -V
 
-# Java version
-java -v
+# Nginx  Version
+nginx -V
 
-# Docker Version
-docker -v
-
-# erlang  Version
-yum info erlang
-apt show erlang
+# python version
+python3 -v
 
 # TensorFlow version
-tensorflowctl status | grep TensorFlow*
+tensorboard --version_tb
+
 ```

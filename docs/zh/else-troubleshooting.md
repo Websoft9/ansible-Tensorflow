@@ -25,4 +25,4 @@ systemctl status tensorflow
 journalctl -u tensorflow
 ```
 
-更多请参照[TensorFlow 故障处理](https://www.tensorflow.org/install/errors)
+ >更多故障详细请参照[官方问题](https://www.tensorflow.org/install/errors)

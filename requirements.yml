@@ -6,6 +6,8 @@
 
 - src: http://github.com/websoft9dev/role_python
 
+- src: http://github.com/websoft9dev/role_init
+
 - src: http://github.com/websoft9dev/role_preend
 
 - src: http://github.com/websoft9dev/role_end

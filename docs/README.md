@@ -4,9 +4,9 @@ home: false
 
 # Overview
 
-This documentation is provided by [Websoft9](https://www.websoft9.com/), it can help users to acquire skills of TensorFlow Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
+This documentation is provided by [Websoft9](https://www.websoft9.com/), it can help users to acquire skills of TensorFlow Deployment, Installation, Configuration, Backup, Upgrade, Connect Instance and more.
 
-[TensorFlow](https://tensorflow-server.apache.org/) is the most widely deployed open source message broker. With more than 35,000 production deployments of TensorFlow world-wide at small startups and large enterprises, TensorFlow is the most popular open source message broker.
+[TensorFlow](https://www.tensorflow.org/) is an end-to-end open source machine learning platform. It has a comprehensive and flexible ecosystem, which contains a variety of tools, libraries and community resources. In terms of machine learning, it can easily build models, carry out reliable machine learning production anytime and anywhere, and conduct powerful research experiments.
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/tensorflow/tensorflow-gui-websoft9.png)
 

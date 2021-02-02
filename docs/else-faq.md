@@ -1,38 +1,23 @@
 # FAQ
 
-#### How can I enable the debug mode of TensorFlow service?
+#### What is the password for the admin user?
 
-```
-systemctl stop tensorflow-server
-tensorflow-server console
-```
-
-#### Can I reset password of TensorFlow by command?
-
-Yes, e.g `tensorflowctl change_password  admin newpassword`
-
-#### If there is no domain name, can I deploy TensorFlow?
-
-Yes, visit TensorFlow by *http://Internet IP:8161*
-
-#### What is the password for the database root user?
-
-The password is stored in the server related file: `/credentials/password.txt`
+The password is stored in the server related file `/credentials/password.txt`.
 
 #### Is there a web-base GUI database management tools?
 
-Yes, phpMyAdmin is on it, visit by *http://Internet IP/phpmyadmin*
+Yes, TensorBoard is on it, visit by *http://Internet IP:6006*
 
 #### Is it possible to modify the source path of TensorFlow?
 
-No
+No, Tensorflow is installed with PIP, and the service startup file is set to the current source code path. After modification, the service could not start
 
 #### How to change the permissions of filesytem?
 
 Change owner(group) or permissions like below:
 
 ```shell
-chown -R apache.apache /data/wwwroot
+chown -R nginx.nginx /data/wwwroot
 find /data/wwwroot -type d -exec chmod 750 {} \;
 find /data/wwwroot -type f -exec chmod 640 {} \;
 ```

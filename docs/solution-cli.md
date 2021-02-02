@@ -1,5 +1,7 @@
 # CLI
 
-Use `tensorflowctl` to manage TensorFlow  
+TensorFlow provides a powerful cli tool `tfx`  
 
-Use `erl` which is a Shell for develop and testing Erlang  
+```
+
+```

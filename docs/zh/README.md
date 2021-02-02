@@ -1,12 +1,10 @@
----
-home: false
----
-
 # 关于
 
 本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 TensorFlow 的安装部署与基本运维技术，包括：TensorFlow部署、初始化安装、环境配置、备份升级和连接云服务器操作等基本操作。
 
-[TensorFlow](https://www.tensorflow.com) TensorFlow 是一个端到端开源机器学习平台。它拥有一个全面而灵活的生态系统，其中包含各种工具、库和社区资源。在机器学习方面，它可以轻松地构建模型、随时随地进行可靠的机器学习生产、进行强大的研究实验。
+[TensorFlow](https://www.tensorflow.org/) TensorFlow 是一个端到端开源机器学习平台。它拥有一个全面而灵活的生态系统，其中包含各种工具、库和社区资源。在机器学习方面，它可以轻松地构建模型、随时随地进行可靠的机器学习生产、进行强大的研究实验。
+
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/tensorflow/tensorflow-pw-websoft9.png)
 
 ---
 

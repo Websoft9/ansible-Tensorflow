@@ -10,7 +10,7 @@
 
 #### 是否可以修改TensorFlow的源码路径？
 
-不可以，TensorFlow用PIP命令安装，随意更换路径会导致服务无法启动
+不可以，TensorFlow使用pip安装，服务启动文件设定路径为目前源码路径，修改后服务可能无法启动
 
 #### TensorFlow 实现GPU支持需要哪些条件？
 
