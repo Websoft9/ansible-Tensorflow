@@ -8,7 +8,7 @@ If you have completed the TensorFlow deployment on Cloud Platform, the following
 2. Check you **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the TCP:6006 is allowed
 3. Make a domain resolution on your DNS Console if you want to use domain for TensorFlow
 
-## TensorFlow install verification
+## TensorFlow Installation Wizard
 
 ### Verification by shell command
 
