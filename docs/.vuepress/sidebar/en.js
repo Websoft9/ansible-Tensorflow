@@ -16,6 +16,7 @@ module.exports = [
         collapsable: false,
         children: [
           '/solution-cli',
+          '/solution-gui',
           '/solution-backup',
           '/solution-upgrade',
           '/solution-more',
