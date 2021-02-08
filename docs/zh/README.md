@@ -4,7 +4,7 @@
 
 [TensorFlow](https://www.tensorflow.org/) TensorFlow 是一个端到端开源机器学习平台。它拥有一个全面而灵活的生态系统，其中包含各种工具、库和社区资源。在机器学习方面，它可以轻松地构建模型、随时随地进行可靠的机器学习生产、进行强大的研究实验。
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/tensorflow/tensorflow-pw-websoft9.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/en/tensorflow/tensowflow-gui-websoft9.jpg)
 
 ---
 

@@ -4,6 +4,10 @@
 
 密码存放在服务器相关文件中：`/credentials/password.txt`
 
+#### TensorFlow 是如何安装的？
+
+是创建 Python 隔离环境后，基于 pip 安装。
+
 #### 是否有可视化的管理工具？
 
 有，内置TensorBoard，访问地址：*http://服务器公网IP:6006/*
@@ -12,10 +16,9 @@
 
 不可以，TensorFlow使用pip安装，服务启动文件设定路径为目前源码路径，修改后服务可能无法启动
 
-#### TensorFlow 实现GPU支持需要哪些条件？
+#### TensorFlow 实现 GPU 支持需要哪些条件？
 
-TensorFlow GPU 支持需要 NVIDIA® GPU显卡以及驱动程序和工具。
-详细请参照[TensorFlow GPU 支持软硬件要求](https://www.tensorflow.org/install/gpu)
+需要 NVIDIA® GPU显卡以及驱动程序和工具。详细请参照[TensorFlow GPU 支持软硬件要求](https://www.tensorflow.org/install/gpu)
 
 #### 如何修改上传的文件权限?
 

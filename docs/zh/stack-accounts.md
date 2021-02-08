@@ -6,10 +6,12 @@
 
 下面列出可能需要用到的几组账号密码：
 
-## TensorFlow
+## TensorBoard
 
 * 管理员账号: `admin`
 * 管理员密码: 存储在您的服务器中的文件中 */credentials/password.txt*  
+
+> 本部署方案通过 [Nginx 验证访问](/zh/stack-components.md#nginx)控制 TensorBoard 的访问
 
 ## Linux
 
@@ -20,6 +22,7 @@
    |  云平台   |  管理员账号   | 其他|
    | --- | --- | --- |
    |  Azure   |  创建服务器的时候自行设置   | [如何开启root账户？](https://support.websoft9.com/docs/azure/zh/server-login.html#示例2：启用系统root账号) |
-   |  AWS Centos 系统   |  centos   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2：启用系统root账号) |
+   |  AWS CentOS 系统   |  centos   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2：启用系统root账号) |
+   |  AWS AmazonLinux 系统   | ec2-user   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2：启用系统root账号) |
    |  AWS Ubuntu 系统  |  ubuntu   | [如何开启root账户？](https://support.websoft9.com/docs/aws/zh/server-login.html#示例2：启用系统root账号)  |
    |  阿里云，华为云，腾讯云   |  root   | |

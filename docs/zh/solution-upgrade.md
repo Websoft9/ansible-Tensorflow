@@ -22,10 +22,14 @@ yum update -y --skip-broken
 > 本部署包已预配置一个用于自动更新的计划任务。如果希望去掉自动更新，请删除对应的Cron
 
 
-## TensorFlow升级
+## TensorFlow 升级
 
-通过pip命令升级
+TensorFlow 是基于 pip 安装，故可以很方便的通过 pip 进行升级
+
 ```
+# 激活隔离环境下的 TensorFlow
 source /data/apps/tensorflow/bin/activate
+
+# 升级
 pip install -U TensorFlow
 ```
