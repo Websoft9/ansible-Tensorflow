@@ -15,14 +15,16 @@ TensorFlow configuration file:  */data/apps/tensorflow/conf*
 Nginx vhost configuration file: */etc/nginx/conf.d/default.conf*    
 Nginx main configuration file: */etc/nginx/nginx.conf*   
 Nginx logs file: */var/log/nginx*  
-Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
-
+Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite*  
+Nginx htpasswd file: */etc/nginx/.htpasswd/htpasswd.conf*
 
 ## Ports
 
-You can control(open or shut down) ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server whether the port can be accessed from Internet.
+Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet.  
 
-You can run the cmd `netstat -tunlp` to list all used ports, and we list the following most useful ports for you:
+You can run the cmd `netstat -tunlp` to check all related ports.  
+
+The following are the ports you may use:
 
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
@@ -31,7 +33,7 @@ You can run the cmd `netstat -tunlp` to list all used ports, and we list the fol
 
 ## Version
 
-You can see the version from product page of Marketplace. However, after being deployed to your server, the components will be automatically updated, resulting in a certain change in the version number. Therefore, the exact version number should be viewed by running the command on the server:
+You can see the version on product pages at Marketplace. However, after being deployed to your server, the components will be updated automatically, resulting in a certain change in the version number. Therefore, run the command on the server to view the exact version number. 
 
 ```shell
 # Check all components version
@@ -50,6 +52,5 @@ nginx -V
 python3 -v
 
 # TensorFlow version
-tensorboard --version_tb
-
+/tensorflow/bin/tensorboard --version_tb
 ```

@@ -1,5 +1,9 @@
 # FAQ
 
+#### How is TensorFlow installed?
+
+Use pip install in the Python virtual environment
+
 #### What is the password for the admin user?
 
 The password is stored in the server related file `/credentials/password.txt`.
