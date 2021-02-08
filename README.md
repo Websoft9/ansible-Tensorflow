@@ -23,7 +23,7 @@ To learn more information, please view [Installation & Configuration](https://ww
 
 ## Ecosystem
 
-Core components of this repository: TensorFlow, Nginx
+Core components of this repository: TensorFlow, Nginx, Python3
 
 Learn more about [Parameters](/docs/stack-components.md).
 
