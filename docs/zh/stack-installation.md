@@ -29,7 +29,7 @@
    ```
    cd /data/apps/tensorflow
    source /data/apps/tensorflow/bin/activate
-   python3 tensorflow_test.py
+   python tensorflow_test.py
    ```
 2. 登录到 TensorBoard，此时页面已经有运行的内容
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/tensorflow/tensorflow-simpletest-websoft9.png)
