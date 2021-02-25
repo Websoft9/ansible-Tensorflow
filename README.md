@@ -17,7 +17,7 @@ System Requirement to install this repository are as following：
 | Operating System   | CentOS7.x, Ubuntu18.04, AmazonLinux2 | Optional                 |
 | Public Cloud     | AWS, Azure, Alibaba Cloud, HUAWEI ClOUD, Tencent Cloud    | Optional                 |
 | Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
-| Server Configuration | vCPU no less than 1 core, Memory no less than  1 GIB, Storage no less than 10 GB, Bandwidth no less than 100M ||
+| Server Configuration | vCPU no less than 1 core, Memory no less than  1 GB, Storage no less than 10 GB, Bandwidth no less than 100M ||
 
 To learn more information, please view [Installation & Configuration](https://www.tensorflow.org/install).
 
