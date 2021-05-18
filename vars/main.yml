@@ -9,7 +9,7 @@ python_applications:
   - tensorflow
 
 init_application:
-  nginx:
+  tensorflow:
     username: "admin"
     password: "admin"
     commands: 
