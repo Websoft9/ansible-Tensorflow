@@ -52,5 +52,5 @@ nginx -V
 python3 -v
 
 # TensorFlow version
-/tensorflow/bin/tensorboard --version_tb
+/data/apps/tensorflow/bin/tensorboard --version_tb
 ```
