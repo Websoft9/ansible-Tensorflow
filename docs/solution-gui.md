@@ -5,7 +5,7 @@
 1. Use local browser to access the URL *http://DNS:6006* or *http://Server's Server's Internet IP:6006* to login
 
 2. Input username and password ([Don't have password?](/stack-accounts.md#tensorflow)), you can see the console of TensorBoard
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/rocketmq/rocketmq-console-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/tensorflow/tensorflow-board-websoft9.png)
 
 3. TensorBoard screenshots
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/tensorflow/tensorboard.gif)
