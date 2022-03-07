@@ -6,6 +6,8 @@ nginx_certbot: True
 nginx_htpasswd: True
 nginx_login_account: ["admin", "123456"]
 
+
+python_version: 3.7 
 python_applications: 
   - tensorflow
 
